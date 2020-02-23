@@ -30,12 +30,9 @@ function create_post_type()
         )
     );
 
-
-
-
-
 }
 add_action('init', 'create_post_type');
+add_action('add_meta_boxes', 'cd_meta_box_add_post');
 
 
 //hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
@@ -86,6 +83,10 @@ function cd_meta_box_add_lighting()
 {
     add_meta_box('my-meta-box-id-2', __('Gallery'), 'cd_meta_box_cb', 'lighting', 'normal', 'high');
 }
+function cd_meta_box_add_post()
+{
+    add_meta_box('my-meta-box-id-2', __('Gallery'), 'cd_meta_box_cb', 'post', 'normal', 'high');
+}
 
 function cd_meta_box_cb()
 {?>
@@ -100,7 +101,7 @@ global $post;
     ?>
 <input id="portfolio_gallery_value" type="hidden" name="portfolio_gallery" value="<?=$images?>"/>
 <input id="portfolio_gallery_button" type="button" value="Add Gallery" />
-<div id="portfolio-gallery">
+<div id="portfolio-gallery" class="clearfix">
  <?php if (count($images)) {?>
   <?php $ids = explode(",", $images)?>
   <ul id="sortable" class="clearfix"> 
@@ -108,7 +109,7 @@ global $post;
     <li>
       <span class="shift8_portfolio_gallery_container">
         <span class="shift8_portfolio_gallery_close">
-        <img id="<?=$id?>" src="<?= wp_get_attachment_thumb_url($id)?>">
+        <img class="portfolio-gallery-image" id="<?=$id?>" src="<?= wp_get_attachment_thumb_url($id)?>">
         </span>
       </span>
     </li>
@@ -163,9 +164,9 @@ function cd_meta_box_save($post_id)
 
 // function add_post_types_to_loop($query) {
 //   if ($query->is_main_query() && ($query->is_search() )) {
-//     $query->set('post_type', array('post', 'portfolio' , 'lighting'));
-//   } 
-// }
+    //     $query->set('post_type', array('post', 'portfolio' , 'lighting'));
+    //   } 
+    // }
 //   add_action('pre_get_posts', 'add_post_types_to_loop');
 
 ?>

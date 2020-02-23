@@ -1,9 +1,6 @@
 <?php get_header();?>
 
 <div class="row">
-    <h1>hiola</h1>
-    <?= have_posts() ?>
-    <h1>hiola</h1>
 	<div class="col-md-12">
 
 		<?php if (have_posts()): ?>

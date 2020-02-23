@@ -1,6 +1,11 @@
 #portfolio-gallery li {
     float: left !important;
     margin: 12px;
+    max-width: 200px;
+}
+
+#portfolio-gallery img {
+    max-width: 100%;
 }
 
 
@@ -10,7 +15,6 @@
 
 .clearfix {
     overflow: auto;
-    border: 1px solid red !important;
 }
 
 .clearfix:after {
