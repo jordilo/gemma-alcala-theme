@@ -1,0 +1,84 @@
+@import "variables";
+.navbar {
+    @media screen and (min-width: 768px) {
+        height: 150px;
+        padding: 50px 0;
+    }
+    &.navbar-default {
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-brand {
+        padding: 0;
+        &>.wp-logo {
+            display: inline;
+            max-height: 100%;
+        }
+    }
+    .navbar-nav>.active {
+        &>a {
+            background-color: transparent;
+            color: $main-color;
+        }
+        &>a:hover {
+            background-color: transparent;
+            color: darken($main-color, 10%);
+        }
+        &>a:active {
+            background-color: transparent;
+            color: lighten($main-color, 10%);
+        }
+    }
+    &.navbar-default .navbar-toggle {
+        border-color: lighten($main-color, 50%);
+        &.collapsed {
+            background-color: lighten($main-color, 55%);
+        }
+        .icon-bar {
+            background-color: $main-color;
+        }
+    }
+    .nav li {
+        border-right: 1px solid $text-color;
+        &:last-child {
+            border-right: none;
+        }
+        @media screen and (max-width:768px) {
+            border-right: none;
+        }
+    }
+    @media screen and (min-width:768px) {
+        #menu-main-menu {
+            float: left !important;
+        }
+    }
+    .secondary-menu {
+        height: 50px;
+        ul {
+            margin: 0;
+        }
+        li {
+            display: inline-block;
+            padding: 14px;
+            text-transform: uppercase;
+            a {
+                color: $text-color;
+            }
+            &.active a {
+                color: $main-color;
+            }
+        }
+        @media screen and (max-width:750px) {
+            text-align: center;
+            border-top: 1px solid #e7e7e7;
+            border-bottom: 1px solid #e7e7e7;
+            ul {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.slider-component {
+    margin-bottom: 30px;
+}

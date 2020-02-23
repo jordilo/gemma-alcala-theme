@@ -1,0 +1,20 @@
+#portfolio-gallery li {
+    float: left !important;
+    margin: 12px;
+}
+
+
+/**
+    CLEARFIX HACK
+*/
+
+.clearfix {
+    overflow: auto;
+    border: 1px solid red !important;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}

@@ -1,0 +1,68 @@
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\000032}}
+.wpcf7-form-control {
+  width: 100%;
+  border: 1px solid #d8d2b4;
+  background-color: #f7f6f0;
+  padding: 5px;
+  margin-bottom: -1px;
+  color: #a09353;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000311}}
+.form-left,
+.form-right {
+  width: 50%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000319}}
+.form-submit {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000327}}
+.wpcf7-form p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000330}}
+.wpcf7-form textarea {
+  height: 103px;
+  margin-left: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000334}}
+.wpcf7-form .wpcf7-submit {
+  width: auto;
+  float: right;
+  color: #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000338}}
+.wpcf7-form .wpcf7-submit:hover {
+  background-color: #f0eee3;
+  color: #d40000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000343}}
+.wpcf7-form span.wpcf7-not-valid-tip {
+  position: absolute;
+}

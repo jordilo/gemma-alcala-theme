@@ -1,0 +1,36 @@
+@import 'variables';
+.footer-widget {
+    background-color: $secondary-color;
+    padding: 20px 12px;
+    margin-top: 72px;
+    color: lighten($text-color, 10%);
+    .container {
+        display: flex;
+    }
+    .widget-area {
+        text-align: center;
+    }
+    @media screen and (max-width:768px) {
+        .container {
+            display: block;
+        }
+    }
+    ul {
+        margin-top: 12px;
+    }
+    .wheretofindme {
+        font-size: 1.3em;
+        .separator {
+            padding: 10px;
+        }
+    }
+}
+
+.footer-text-copyright {
+    background-color: darken($secondary-color, 5%);
+    border-top: 1px solid darken($secondary-color, 15%);
+    color: darken($secondary-color, 50%);
+    padding: 12px;
+    text-align: center;
+    margin: 0;
+}

@@ -1,0 +1,31 @@
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000032}}
+.main-sidebar {
+  border-left: 1px solid #f2f0e6;
+  padding-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000035}}
+.main-sidebar .widget-area {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\0000310}}
+ul.instagram-pics.instagram-size-thumbnail li {
+  margin-top: 10px;
+}

@@ -1,0 +1,627 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\000031}}
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url("../fonts/FuturaStd-Medium.otf");
+}
+@font-face {
+  font-family: lightFont;
+  src: url("../fonts/Nunito-Light.ttf");
+}
+@font-face {
+  font-family: boldFont;
+  src: url("../fonts/Nunito-Bold.ttf");
+}
+@font-face {
+  font-family: titleFonts;
+  src: url("../fonts/NotoSerif-Regular.ttf");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000325}}
+* {
+  font-family: mainFont;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000329}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .navbar-nav {
+  font-family: titleFonts !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000337}}
+h1 *,
+h2 *,
+h3 *,
+h4 *,
+h5 *,
+h6 *,
+.navbar .navbar-nav * {
+  font-family: titleFonts !important;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\000032}}
+  .navbar {
+    height: 150px;
+    padding: 50px 0;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\000037}}
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000311}}
+.navbar .navbar-brand {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000313}}
+.navbar .navbar-brand > .wp-logo {
+  display: inline;
+  max-height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000319}}
+.navbar .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000323}}
+.navbar .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #b50000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000327}}
+.navbar .navbar-nav > .active > a:active {
+  background-color: transparent;
+  color: #ff1c1c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000332}}
+.navbar.navbar-default .navbar-toggle {
+  border-color: #ffe8e8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000334}}
+.navbar.navbar-default .navbar-toggle.collapsed {
+  background-color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000337}}
+.navbar.navbar-default .navbar-toggle .icon-bar {
+  background-color: #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000341}}
+.navbar .nav li {
+  border-right: 1px solid #454545;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000343}}
+.navbar .nav li:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000341}}
+  .navbar .nav li {
+    border-right: none;
+  }
+}
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000351}}
+  .navbar #menu-main-menu {
+    float: left !important;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000355}}
+.navbar .secondary-menu {
+  height: 50px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000357}}
+.navbar .secondary-menu ul {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000360}}
+.navbar .secondary-menu li {
+  display: inline-block;
+  padding: 14px;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000364}}
+.navbar .secondary-menu li a {
+  color: #454545;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000367}}
+.navbar .secondary-menu li.active a {
+  color: #E80000;
+}
+@media screen and (max-width: 750px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000355}}
+  .navbar .secondary-menu {
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000375}}
+  .navbar .secondary-menu ul {
+    padding: 0;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000382}}
+.slider-component {
+  margin-bottom: 30px;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\000032}}
+.footer-widget {
+  background-color: #f2f0e6;
+  padding: 20px 12px;
+  margin-top: 72px;
+  color: #5f5f5f;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\000037}}
+.footer-widget .container {
+  display: flex;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000310}}
+.footer-widget .widget-area {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000314}}
+  .footer-widget .container {
+    display: block;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000318}}
+.footer-widget ul {
+  margin-top: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000321}}
+.footer-widget .wheretofindme {
+  font-size: 1.3em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000323}}
+.footer-widget .wheretofindme .separator {
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000329}}
+.footer-text-copyright {
+  background-color: #e9e6d5;
+  border-top: 1px solid #d8d2b4;
+  color: #8f834a;
+  padding: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\000032}}
+.blog-summary {
+  height: 300px;
+  padding: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\000035}}
+.blog-summary .blog-wrap {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000312}}
+.blog-summary .blog-wrap:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000314}}
+.blog-summary .blog-wrap:hover h2 {
+  color: #ff1c1c;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000319}}
+.blog-summary h2 {
+  padding: 12px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #E80000;
+  width: 100%;
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000330}}
+.post-navigation {
+  margin: 12px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000333}}
+.post-navigation h2.screen-reader-text {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000337}}
+.post-navigation .nav-links .nav-previous {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000340}}
+.post-navigation .nav-links .nav-next {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/post\.scss}line{font-family:\0000346}}
+.post-title-header {
+  font-size: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\000032}}
+.widget-area {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  border-right: 3px solid #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\000037}}
+.widget-area ul {
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000312}}
+.widget-area li {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000315}}
+.widget-area > div {
+  padding: 15px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000319}}
+.widget-area:last-child {
+  border-right: none;
+}
+
+@media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000325}}
+  .widget-area {
+    border-right: none;
+  }
+}
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\000032}}
+.wpcf7-form-control {
+  width: 100%;
+  border: 1px solid #d8d2b4;
+  background-color: #f7f6f0;
+  padding: 5px;
+  margin-bottom: -1px;
+  color: #a09353;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000311}}
+.form-left,
+.form-right {
+  width: 50%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000319}}
+.form-submit {
+  width: 100%;
+  float: left;
+  padding-bottom: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000327}}
+.wpcf7-form p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000330}}
+.wpcf7-form textarea {
+  height: 103px;
+  margin-left: -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000334}}
+.wpcf7-form .wpcf7-submit {
+  width: auto;
+  float: right;
+  color: #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000338}}
+.wpcf7-form .wpcf7-submit:hover {
+  background-color: #f0eee3;
+  color: #d40000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000343}}
+.wpcf7-form span.wpcf7-not-valid-tip {
+  position: absolute;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\000032}}
+.entry-content-portfolio {
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: 12px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\000039}}
+.entry-content-portfolio-single {
+  margin: 75px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000312}}
+.entry-content-portfolio a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: transparent;
+  font-size: 20px;
+  transition: all 500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000320}}
+.entry-content-portfolio a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #E80000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000328}}
+.portfolio-archive .entry-content-portfolio {
+  height: 250px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000333}}
+a.example-image-link {
+  width: 24%;
+  display: inline-block;
+  position: relative;
+  margin: 2px 0;
+}
+@media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000333}}
+  a.example-image-link {
+    width: 49%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000341}}
+a.example-image-link img {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000346}}
+.example-image-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  color: transparent;
+  font-size: 15px;
+  transition: all 500ms;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000358}}
+.example-image-title:hover {
+  color: #454545;
+  background: rgba(255, 255, 255, 0.8);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000362}}
+.example-image-title div {
+  width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000369}}
+.portfolio_quote_text {
+  padding: 12px;
+  background-color: #f2f0e6;
+  color: #E80000;
+  font-size: 1.6em;
+  height: 360px;
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: titleFont;
+}
+
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix, .post-navigation, .form-left,
+.form-right, .form-submit {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after, .post-navigation:after, .form-left:after,
+.form-right:after, .form-submit:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000032}}
+.main-sidebar {
+  border-left: 1px solid #f2f0e6;
+  padding-left: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000035}}
+.main-sidebar .widget-area {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\0000310}}
+ul.instagram-pics.instagram-size-thumbnail li {
+  margin-top: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000350}}
+a {
+  color: #cf0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000352}}
+a:hover {
+  color: #ff0202;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000357}}
+html,
+body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000362}}
+#main-container {
+  min-height: calc(100% - 400px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/index\.scss}line{font-family:\0000366}}
+.show-more-wrap,
+.portfolio-thumbnail-wrap {
+  margin: 72px 0;
+}

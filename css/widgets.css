@@ -1,0 +1,50 @@
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\000032}}
+.widget-area {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 6px;
+  border-right: 3px solid #E80000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\000037}}
+.widget-area ul {
+  font-size: 0.8em;
+  font-weight: normal;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000312}}
+.widget-area li {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000315}}
+.widget-area > div {
+  padding: 15px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000319}}
+.widget-area:last-child {
+  border-right: none;
+}
+
+@media screen and (max-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\0000325}}
+  .widget-area {
+    border-right: none;
+  }
+}

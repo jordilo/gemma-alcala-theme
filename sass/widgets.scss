@@ -1,0 +1,28 @@
+@import "variables";
+.widget-area {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 6px;
+    border-right: 3px solid $main-color;
+    ul {
+        font-size: 0.8em;
+        font-weight: normal;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    &>div {
+        padding: 15px;
+        margin: 0 auto;
+    }
+    &:last-child {
+        border-right: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .widget-area {
+        border-right: none;
+    }
+}

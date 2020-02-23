@@ -1,0 +1,46 @@
+@import "variables";
+.wpcf7-form-control {
+    width: 100%;
+    border: 1px solid darken($secondary-color, 15%);
+    background-color: lighten($secondary-color, 3%);
+    padding: 5px;
+    margin-bottom: -1px;
+    color: darken($secondary-color, 45%);
+}
+
+.form-left,
+.form-right {
+    @extend .clearfix;
+    width: 50%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.form-submit {
+    @extend .clearfix;
+    width: 100%;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.wpcf7-form {
+    p {
+        margin: 0;
+    }
+    textarea {
+        height: 103px;
+        margin-left: -1px;
+    }
+    .wpcf7-submit {
+        width: auto;
+        float: right;
+        color: $main-color;
+        &:hover {
+            background-color: darken($secondary-color, 1%);
+            color: darken($main-color, 4%);
+        }
+    }
+    span.wpcf7-not-valid-tip {
+        position: absolute;
+    }
+}

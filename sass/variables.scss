@@ -1,0 +1,20 @@
+/**
+    COLORS
+*/
+
+$main-color: #E80000;
+$secondary-color: rgb(242, 240, 230);
+$text-color: #454545;
+
+/**
+    CLEARFIX HACK
+*/
+
+.clearfix {
+    overflow: auto;
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

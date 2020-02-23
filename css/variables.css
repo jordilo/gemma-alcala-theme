@@ -1,0 +1,16 @@
+/**
+    COLORS
+*/
+/**
+    CLEARFIX HACK
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000313}}
+.clearfix {
+  overflow: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/variables\.scss}line{font-family:\0000315}}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}

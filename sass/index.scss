@@ -1,0 +1,69 @@
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url('../fonts/FuturaStd-Medium.otf');
+}
+
+@font-face {
+    font-family: lightFont;
+    src: url('../fonts/Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url('../fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+    font-family: titleFonts;
+    src: url('../fonts/NotoSerif-Regular.ttf');
+}
+
+* {
+    font-family: mainFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .navbar-nav {
+    font-family: titleFonts !important;
+    & * {
+        font-family: titleFonts !important;
+    }
+}
+
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'post';
+@import 'widgets';
+@import 'forms';
+@import 'portfolio';
+@import 'sidebar';
+a {
+    color: darken($main-color, 5%);
+    &:hover {
+        color: lighten($main-color, 5%);
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#main-container {
+    min-height: calc(100% - 400px);
+}
+
+.show-more-wrap,
+.portfolio-thumbnail-wrap {
+    margin: 72px 0;
+}

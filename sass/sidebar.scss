@@ -1,0 +1,12 @@
+@import "variables";
+.main-sidebar {
+    border-left: 1px solid $secondary-color;
+    padding-left: 12px;
+    .widget-area {
+        width: 100%;
+    }
+}
+
+ul.instagram-pics.instagram-size-thumbnail li {
+    margin-top: 10px;
+}
