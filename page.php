@@ -19,8 +19,17 @@
             <?php } else {?>
                 <div class='row portfolio-thumbnail-wrap'>
                 <?php
-                    $args = array('post_type' => array('portfolio' , 'lighting'), 'posts_per_page' => 5);
+
+                        $args = array(
+                            'post_type' => array('portfolio' , 'lighting'),
+                            'meta_key' => 'item-order-priority',
+                            'orderby'   => 'meta_value_num',
+                            'order' => 'DESC',
+                            'posts_per_page' => 5
+                            );
+
                     $loop = new WP_Query($args);
+       
                     while ($loop->have_posts()): $loop->the_post();?>
                     <div class="col-md-4">
                        <?php include 'portfolio-summary-tmpl.php';?>

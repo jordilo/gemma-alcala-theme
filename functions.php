@@ -5,6 +5,17 @@ add_theme_support('post-thumbnails');
 add_theme_support('automatic-feed-links');
 add_theme_support('title-tag');
 
+/**
+ * 
+ */
+$q = "SELECT wp.id FROM {$wpdb->prefix}posts as wp "
+."LEFT join {$wpdb->prefix}postmeta as mt on mt.post_id = wp.id and mt.meta_key = 'item-order-priority'"
+."WHERE mt.meta_key IS NULL";
+$posts___ = $wpdb->get_results( $q );
+foreach($posts___ as $p_){
+    $wpdb->insert("{$wpdb->prefix}postmeta" , array( "post_id" => $p_->id, "meta_key" => 'item-order-priority',"meta_value" => 0));
+};
+
 //Add content width (desktop default)
 if (!isset($content_width)) {
     $content_width = 768;
