@@ -19,18 +19,7 @@ $exploded = explode(",", $meta['portfolio_gallery'][0]);
 							<?php }?>
 			                 <?php the_content();?>
 						</div>
-	                    <div class="entry-content-portfolio-single clearfix">
-	                        <?php foreach ($exploded as $mediaId) {?>
-	                        <?php $mediaInfo = get_post($mediaId);?>
-	                        <a class="example-image-link"
-	                            href="<?=wp_get_attachment_url($mediaId)?>"
-	                            data-lightbox="portfolio-set"
-	                            data-title="<?=$mediaInfo->post_title?> </br> <span style='font-weight: 200'><?= $mediaInfo->post_content?></span>">
-	                            <img class="example-image" src="<?=wp_get_attachment_thumb_url($mediaId)?>" alt="<?=$mediaInfo->post_title?> " />
-	                            <div class="example-image-title"><div><?=$mediaInfo->post_title?> </br> <?=$mediaInfo->post_content?></div></div>
-	                        </a>
-	                        <?php }?>
-	                    </div>
+						<?php include('gallery.php')?>
 						<?php
     if (is_singular()) {
         // support for pages split by nextpage quicktag
