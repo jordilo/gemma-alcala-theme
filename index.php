@@ -13,14 +13,22 @@
         $image = get_site_icon_url();
     }
     ?>
-				   <div  class="col-md-4 blog-summary" id="post-<?php the_ID();?>" <?php post_class();?>>
+                   <div  class="col-md-4 blog-summary-container " id="post-<?php the_ID();?>" <?php post_class();?>>
+                   <small class="blog-date"><?= get_the_date(null , $post) ?></small>
 				   <?php if (get_option('page_on_front') != $post->ID) {?>
+                   <div class="blog-summary">
 					<a href="<?=get_post_permalink($post->ID)?>" >
 						<div class="blog-wrap" style="background-image:url(<?=$image?>)">
-								<?php the_title('<h2>', '</h2>');?>
-								<?php }?>
+								
 							</div>
 						</a>
+                    </div>
+                    <?php if (has_tag()) {?>
+                    <div class="blog-tags"><?= the_tags('',' ')?>    </div>     
+                    <?php }?>
+                    <div class="blog-title"><a href="<?=get_post_permalink($post->ID)?>" ><?php the_title('<h2>', '</h2>');?></a></div>
+                    <div class="blog-excerpt"><?php the_excerpt('<p>', '</p>');?></div>
+                    <?php }?>
 					</div>
 					<?php
     if (is_singular()) {

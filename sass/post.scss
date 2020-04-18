@@ -1,26 +1,31 @@
 @import "variables";
-.blog-summary {
-    height: 300px;
-    padding: 12px;
-    .blog-wrap {
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        opacity: 0.7;
-        position: relative;
-        &:hover {
-            opacity: 1;
-            h2 {
-                color: lighten($main-color, 10%);
+.blog-summary-container {
+    height: 443px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    .blog-date {
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+    .blog-summary {
+        height: 250px;
+        .blog-wrap {
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.7;
+            position: relative;
+            &:hover {
+                opacity: 1;
+                h2 {
+                    color: lighten($main-color, 10%);
+                }
             }
         }
     }
     h2 {
-        padding: 12px;
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(255, 255, 255, 0.6);
+        padding: 12px 0;
         color: $main-color;
         width: 100%;
         margin: 0;

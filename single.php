@@ -14,7 +14,7 @@ $exploded = explode(",", $meta['portfolio_gallery'][0]);
                  <?php the_content(); ?>
 			</div>
 			<div class="entry-content-portfolio-single clearfix">
-				<?php foreach ($exploded as $mediaId) {?>
+				<?php foreach (array_filter($exploded) as $mediaId) {?>
 				<?php $mediaInfo = get_post($mediaId);?>
 				<a class="example-image-link"
 					href="<?=wp_get_attachment_url($mediaId)?>"
@@ -24,7 +24,7 @@ $exploded = explode(",", $meta['portfolio_gallery'][0]);
 					<div class="example-image-title"><div><?=$mediaInfo->post_title?> </br> <?=$mediaInfo->post_content?></div></div>
 				</a>
 				<?php }?>
-			</div>
+			</div> 
 			<?php
 			if (is_singular()) {
 				// support for pages split by nextpage quicktag
