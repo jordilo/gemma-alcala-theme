@@ -30,12 +30,16 @@
     }
 }
 
-a.example-image-link {
+.example-image-link {
     height: 200px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     margin: 2px 0;
+    &-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
     @media screen and (max-width: 768px) {
         width: 49%;
     }
@@ -46,7 +50,7 @@ a.example-image-link {
 
 .example-image-title {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
     top: 0;
     display: flex;
