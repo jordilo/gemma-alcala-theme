@@ -134,4 +134,15 @@ function cd_meta_box_save($post_id)
     }
 
 }
+
+function order_posts_by_title($query){
+    $post_type  = $query->query_vars['post_type'];
+    $isPostTypeSortable =  $post_type == "portfolio" || $post_type == "lighting" /*|| $post_type == ""*/;
+    if ($query->is_main_query() & $isPostTypeSortable) {
+        $query->set('orderby', 'meta_value_num');
+        $query->set('meta_key', 'item-order-priority');
+        $query->set('order', 'DESC');
+    }
+}
+add_action('pre_get_posts', 'order_posts_by_title');
 ?>
