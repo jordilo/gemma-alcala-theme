@@ -7,11 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php 
-      $mainColor = hexToHsl('e80000');
-      $secondaryColor = hexToHsl('f2f0e6');
-      $textColor = hexToHsl('656565');
-      $mainTextColor = hexToHsl('454545');
-      $backgroundColor = hexToHsl('ffffff');
+      $mainColor = hexToHsl(str_replace('#' ,'' ,get_theme_mod('custom_theme_color_main'))); 
+      $secondaryColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_secondary')));
+      $textColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_text')));
+      $mainTextColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_main_text')));
+      $backgroundColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_background')));
     ?>
     <style>
       :root{

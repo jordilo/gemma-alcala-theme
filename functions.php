@@ -497,6 +497,109 @@ function genesischild_register_theme_customizer($wp_customize)
         'title' => __('Portfolio settings', 'genesischild'),
         'description' => __('Set editable text for certain content.', 'genesischild'),
     ));
+    // Add Colors Text
+    // Add section.
+    $wp_customize->add_section('custom_theme_colors', array(
+        'title' => __('Theme colors', 'genesischild'),
+        'panel' => 'text_blocks',
+        'priority' => 10,
+    ));
+    /**
+     * Main color
+     */
+    // Add setting
+    $wp_customize->add_setting('custom_theme_color_main', array(
+        'default' => __('#e80000', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'custom_theme_colors',
+        array(
+            'label' => __('Main color', 'genesischild'),
+            'section' => 'custom_theme_colors',
+            'settings' => 'custom_theme_color_main',
+            'type' => 'text',
+        )
+    ));
+    /**
+     * Secondary color
+     */
+    // Add setting
+    $wp_customize->add_setting('custom_theme_color_secondary', array(
+        'default' => __('#f2f0e6', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'secondary_control',
+        array(
+            'label' => __('Secondary color', 'genesischild'),
+            'section' => 'custom_theme_colors',
+            'settings' => 'custom_theme_color_secondary',
+            'type' => 'text',
+        )
+    ));
+    /**
+     * Text color
+     */
+    // Add setting
+    $wp_customize->add_setting('custom_theme_color_text', array(
+        'default' => __('#656565', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'text_control',
+        array(
+            'label' => __('Text color', 'genesischild'),
+            'section' => 'custom_theme_colors',
+            'settings' => 'custom_theme_color_text',
+            'type' => 'text',
+        )
+    ));
+    /**
+     * Main text color
+     */
+    // Add setting
+    $wp_customize->add_setting('custom_theme_color_main_text', array(
+        'default' => __('#454545', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'main_text_control',
+        array(
+            'label' => __('Main text color', 'genesischild'),
+            'section' => 'custom_theme_colors',
+            'settings' => 'custom_theme_color_main_text',
+            'type' => 'text',
+        )
+    ));
+    /**
+     * Background  color
+     */
+    // Add setting
+    $wp_customize->add_setting('custom_theme_color_background', array(
+        'default' => __('#ffffff', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'background_control',
+        array(
+            'label' => __('Background color', 'genesischild'),
+            'section' => 'custom_theme_colors',
+            'settings' => 'custom_theme_color_background',
+            'type' => 'text',
+        )
+    ));
+
     // Add Footer Text
     // Add section.
     $wp_customize->add_section('custom_footer_text', array(
