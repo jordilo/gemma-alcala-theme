@@ -7,11 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="pingback" href="<?php bloginfo('pingback_url');?>" />
     <?php 
-      $mainColor = hexToHsl(str_replace('#' ,'' ,get_theme_mod('custom_theme_color_main'))); 
-      $secondaryColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_secondary')));
-      $textColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_text')));
-      $mainTextColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_main_text')));
-      $backgroundColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_background')));
+      $mainColor = hexToHsl(str_replace('#' ,'' ,get_theme_mod('custom_theme_color_main' ,'e80000'))); 
+      $secondaryColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_secondary','f2f0e6')));
+      $textColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_text','656565')));
+      $mainTextColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_main_text','454545')));
+      $backgroundColor = hexToHsl(str_replace('#','',get_theme_mod('custom_theme_color_background','ffffff')));
     ?>
     <style>
       :root{
@@ -133,7 +133,7 @@ if (get_theme_mod('twitter_cards') || get_theme_mod('facebook_id')) {
 	</head>
 
   <body <?php body_class(isset($class) ? $class : '');?>>
-
+  
     <nav class="navbar navbar-default container" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
