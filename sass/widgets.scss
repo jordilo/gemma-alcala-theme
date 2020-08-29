@@ -3,7 +3,8 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 6px;
-    border-right: 3px solid $main-color;
+    border-right: 1px solid darken($secondary-color, 20);
+
     ul {
         font-size: 0.8em;
         font-weight: normal;
