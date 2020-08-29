@@ -827,7 +827,7 @@ function my_pre_get_posts( $query )
     }
 
 
-    if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'events' )
+    if( isset($query->query_vars['post_type']) && ($query->query_vars['post_type'] == 'portfolio' || $query->query_vars['post_type'] == 'lighting'))
     {
         $query->set('orderby', 'meta_value_num');
         $query->set('meta_key', 'item-order-priority');
