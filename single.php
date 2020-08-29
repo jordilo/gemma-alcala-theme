@@ -4,6 +4,13 @@ $meta = get_post_meta($post->ID);
 $exploded = explode(",", $meta['portfolio_gallery'][0]);
 ?>
 <div class="row">
+	<?php
+        $thumbnailUrl = get_the_post_thumbnail_url($post, 'full');
+        if($thumbnailUrl){
+    ?>
+    <div class="featured-image__header col-md-12" style="background-image:url(<?= $thumbnailUrl?>)">
+        <?php }?>
+    </div>
 	<div class="col-md-9">
 		<?php if(have_posts()) : ?>
 		   <?php while(have_posts()) : the_post(); ?>

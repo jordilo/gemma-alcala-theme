@@ -569,6 +569,15 @@ img {
   font-family: titleFont;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000389}}
+.featured-image__header {
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
 /**
     COLORS
 */
