@@ -39,33 +39,33 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000319}}
 .navbar .navbar-nav > .active > a {
   background-color: transparent;
-  color: #E80000;
+  color: var(--main-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000323}}
 .navbar .navbar-nav > .active > a:hover {
   background-color: transparent;
-  color: #b50000;
+  color: var(--main-color-darken);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000327}}
 .navbar .navbar-nav > .active > a:active {
   background-color: transparent;
-  color: #ff1c1c;
+  color: var(--main-color-lighter);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000332}}
 .navbar.navbar-default .navbar-toggle {
-  border-color: #ffe8e8;
+  border-color: var(--main-color--lightest);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000334}}
 .navbar.navbar-default .navbar-toggle.collapsed {
-  background-color: white;
+  background-color: var(--main-color--lightest);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000337}}
 .navbar.navbar-default .navbar-toggle .icon-bar {
-  background-color: #E80000;
+  background-color: var(--main-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000341}}
 .navbar .nav li {
-  border-right: 1px solid #454545;
+  border-right: 1px solid var(--text-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000343}}
 .navbar .nav li:last-child {
@@ -99,11 +99,11 @@
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000364}}
 .navbar .secondary-menu li a {
-  color: #454545;
+  color: var(--text-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000367}}
 .navbar .secondary-menu li.active a {
-  color: #E80000;
+  color: var(--main-color);
 }
 @media screen and (max-width: 750px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000355}}

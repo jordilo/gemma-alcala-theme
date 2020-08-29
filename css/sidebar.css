@@ -17,7 +17,7 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000032}}
 .main-sidebar {
-  border-left: 1px solid #f2f0e6;
+  border-left: 1px solid var(--secondary-color);
   padding-left: 12px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/sidebar\.scss}line{font-family:\000035}}

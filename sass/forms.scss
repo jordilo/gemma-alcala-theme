@@ -1,11 +1,11 @@
 @import "variables";
 .wpcf7-form-control {
     width: 100%;
-    border: 1px solid darken($secondary-color, 15%);
-    background-color: lighten($secondary-color, 3%);
+    border: 1px solid var(--secondary-color-darken);
+    background-color: var(--secondary-color-lighter);
     padding: 5px;
     margin-bottom: -1px;
-    color: darken($secondary-color, 45%);
+    color: var(--secondary-color-darkest);
 }
 
 .form-left,
@@ -34,10 +34,10 @@
     .wpcf7-submit {
         width: auto;
         float: right;
-        color: $main-color;
+        color: var(--main-color);
         &:hover {
-            background-color: darken($secondary-color, 1%);
-            color: darken($main-color, 4%);
+            background-color: var(--secondary-color-darker);
+            color: var(--main-color-darker);
         }
     }
     span.wpcf7-not-valid-tip {

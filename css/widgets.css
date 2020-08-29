@@ -20,7 +20,7 @@
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 6px;
-  border-right: 1px solid #cfc8a3;
+  border-right: 1px solid var(--secondary-color-darkest);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/widgets\.scss}line{font-family:\000038}}
 .widget-area ul {

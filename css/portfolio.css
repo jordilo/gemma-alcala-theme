@@ -41,7 +41,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000320}}
 .entry-content-portfolio a:hover {
   background-color: rgba(255, 255, 255, 0.7);
-  color: #E80000;
+  color: var(--main-color);
   text-decoration: none;
 }
 
@@ -90,7 +90,7 @@
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000364}}
 .example-image-title:hover {
-  color: #454545;
+  color: var(--text-color);
   background: rgba(255, 255, 255, 0.8);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000368}}
@@ -103,8 +103,8 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000375}}
 .portfolio_quote_text {
   padding: 12px;
-  background-color: #f2f0e6;
-  color: #E80000;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
   font-size: 1.6em;
   height: 360px;
   margin: 12px 0;

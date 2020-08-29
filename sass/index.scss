@@ -48,15 +48,17 @@ h6,
 @import 'portfolio';
 @import 'sidebar';
 a {
-    color: darken($main-color, 5%);
+    color: var(--main-color-darker);
     &:hover {
-        color: lighten($main-color, 5%);
+        color: var(--main-color-lighter);
     }
 }
 
 html,
 body {
     height: 100%;
+    color: var(--main-text-color);
+    background-color: var(--background-color);
 }
 
 #main-container {

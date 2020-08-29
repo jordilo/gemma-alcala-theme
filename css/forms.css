@@ -20,11 +20,11 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\000032}}
 .wpcf7-form-control {
   width: 100%;
-  border: 1px solid #d8d2b4;
-  background-color: #f7f6f0;
+  border: 1px solid var(--secondary-color-darken);
+  background-color: var(--secondary-color-lighter);
   padding: 5px;
   margin-bottom: -1px;
-  color: #a09353;
+  color: var(--secondary-color-darkest);
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000311}}
@@ -55,12 +55,12 @@
 .wpcf7-form .wpcf7-submit {
   width: auto;
   float: right;
-  color: #E80000;
+  color: var(--main-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000338}}
 .wpcf7-form .wpcf7-submit:hover {
-  background-color: #f0eee3;
-  color: #d40000;
+  background-color: var(--secondary-color-darker);
+  color: var(--main-color-darker);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/forms\.scss}line{font-family:\0000343}}
 .wpcf7-form span.wpcf7-not-valid-tip {

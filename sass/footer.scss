@@ -1,36 +1,38 @@
 @import 'variables';
 .footer-widget {
-    background-color: $secondary-color;
-    padding: 20px 12px;
-    margin-top: 72px;
-    color: lighten($text-color, 10%);
-    .container {
-        display: flex;
-    }
-    .widget-area {
-        text-align: center;
-    }
-    @media screen and (max-width:768px) {
-        .container {
-            display: block;
-        }
-    }
-    ul {
-        margin-top: 12px;
-    }
-    .wheretofindme {
-        font-size: 1.3em;
-        .separator {
-            padding: 10px;
-        }
-    }
-}
-
-.footer-text-copyright {
-    background-color: darken($secondary-color, 5%);
-    border-top: 1px solid darken($secondary-color, 15%);
-    color: darken($secondary-color, 50%);
-    padding: 12px;
+  background-color: var(--secondary-color);
+  padding: 20px 12px;
+  margin-top: 72px;
+  color: var(--text-color-lighter);
+  .container {
+    display: flex;
+  }
+  .widget-area {
     text-align: center;
-    margin: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      display: block;
+    }
+  }
+  ul {
+    margin-top: 12px;
+  }
+  .wheretofindme {
+    font-size: 1.3em;
+    .separator {
+      padding: 10px;
+    }
+  }
+}
+// :root {
+//   --some-darker: hsl(var(--color-s), calc(var(--l-s) - 8%));
+// }
+.footer-text-copyright {
+  background-color: var(--secondary-color-darker);
+  border-top: 1px solid var(--secondary-color-darker);
+  color: var(--secondary-color-darkest);
+  padding: 12px;
+  text-align: center;
+  margin: 0;
 }

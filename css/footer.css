@@ -17,10 +17,10 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\000032}}
 .footer-widget {
-  background-color: #f2f0e6;
+  background-color: var(--secondary-color);
   padding: 20px 12px;
   margin-top: 72px;
-  color: #5f5f5f;
+  color: var(--text-color-lighter);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\000037}}
 .footer-widget .container {
@@ -49,11 +49,11 @@
   padding: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/footer\.scss}line{font-family:\0000331}}
 .footer-text-copyright {
-  background-color: #e9e6d5;
-  border-top: 1px solid #d8d2b4;
-  color: #8f834a;
+  background-color: var(--secondary-color-darker);
+  border-top: 1px solid var(--secondary-color-darker);
+  color: var(--secondary-color-darkest);
   padding: 12px;
   text-align: center;
   margin: 0;

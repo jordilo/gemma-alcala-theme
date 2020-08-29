@@ -3,7 +3,7 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 6px;
-    border-right: 1px solid darken($secondary-color, 20);
+    border-right: 1px solid var(--secondary-color-darkest);
 
     ul {
         font-size: 0.8em;

@@ -4,6 +4,5 @@
 *.DS_Store
 *.swp
 *.out
-.sass-cache
 sftp-config.json
 .sass-cache/*

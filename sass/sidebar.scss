@@ -1,6 +1,6 @@
 @import "variables";
 .main-sidebar {
-    border-left: 1px solid $secondary-color;
+    border-left: 1px solid var(--secondary-color);;
     padding-left: 12px;
     .widget-area {
         width: 100%;

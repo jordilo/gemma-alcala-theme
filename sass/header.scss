@@ -18,28 +18,28 @@
     .navbar-nav>.active {
         &>a {
             background-color: transparent;
-            color: $main-color;
+            color: var(--main-color);
         }
         &>a:hover {
             background-color: transparent;
-            color: darken($main-color, 10%);
+            color: var(--main-color-darken);
         }
         &>a:active {
             background-color: transparent;
-            color: lighten($main-color, 10%);
+            color: var(--main-color-lighter);
         }
     }
     &.navbar-default .navbar-toggle {
-        border-color: lighten($main-color, 50%);
+        border-color: var(--main-color--lightest);
         &.collapsed {
-            background-color: lighten($main-color, 55%);
+            background-color: var(--main-color--lightest);
         }
         .icon-bar {
-            background-color: $main-color;
+            background-color: var(--main-color);
         }
     }
     .nav li {
-        border-right: 1px solid $text-color;
+        border-right: 1px solid var(--text-color);
         &:last-child {
             border-right: none;
         }
@@ -62,10 +62,10 @@
             padding: 14px;
             text-transform: uppercase;
             a {
-                color: $text-color;
+                color: var(--text-color);
             }
             &.active a {
-                color: $main-color;
+                color: var(--main-color);
             }
         }
         @media screen and (max-width:750px) {
