@@ -1,60 +1,68 @@
-@import "variables";
+@import 'variables';
 .blog-summary-container {
-    height: 443px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    .blog-date {
-        font-style: italic;
-        margin-bottom: 5px;
-    }
-    .blog-summary {
-        height: 250px;
-        .blog-wrap {
-            height: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            opacity: 0.7;
-            position: relative;
-            &:hover {
-                opacity: 1;
-                h2 {
-                    color: lighten($main-color, 10%);
-                }
-            }
+  height: 443px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  .blog-date {
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  .blog-summary {
+    height: 250px;
+    .blog-wrap {
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.7;
+      position: relative;
+      &:hover {
+        opacity: 1;
+        h2 {
+          color: lighten($main-color, 10%);
         }
+      }
     }
-    h2 {
-        padding: 12px 0;
-        color: $main-color;
-        width: 100%;
-        margin: 0;
-    }
+  }
+  h2 {
+    padding: 12px 0;
+    color: $text-color;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .post-navigation {
-    margin: 12px 0;
-    @extend .clearfix;
-    h2.screen-reader-text {
-        display: none;
+  margin: 12px 0;
+  @extend .clearfix;
+  h2.screen-reader-text {
+    display: none;
+  }
+  .nav-links {
+    .nav-previous {
+      float: left;
     }
-    .nav-links {
-        .nav-previous {
-            float: left;
-        }
-        .nav-next {
-            float: right;
-        }
+    .nav-next {
+      float: right;
     }
+  }
 }
 
 .post-title-header {
-    font-size: 30px;
-    // border-bottom: 1px solid $main-color;
-    // border-top: 1px solid $main-color;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    margin-top: 0;
-    padding-left: 20px;
-    padding-top: 10px;
+  font-size: 30px;
+  // border-bottom: 1px solid $main-color;
+  // border-top: 1px solid $main-color;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.blog-title a:hover {
+  text-decoration: none;
+  h2 {
+    opacity: 0.6;
+    transition: all 300ms;
+  }
 }

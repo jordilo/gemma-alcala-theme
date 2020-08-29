@@ -23,9 +23,9 @@
 							</div>
 						</a>
                     </div>
-                    <?php if (has_tag()) {?>
+                    <!-- <?php if (has_tag()) {?>
                     <div class="blog-tags"><?= the_tags('',' ')?>    </div>     
-                    <?php }?>
+                    <?php }?> -->
                     <div class="blog-title"><a href="<?=get_post_permalink($post->ID)?>" ><?php the_title('<h2>', '</h2>');?></a></div>
                     <div class="blog-excerpt"><?php the_excerpt('<p>', '</p>');?></div>
                     <?php }?>
