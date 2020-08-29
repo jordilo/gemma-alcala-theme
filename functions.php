@@ -818,6 +818,28 @@ function genesischild_register_theme_customizer($wp_customize)
 }
 // Show posts of 'post', 'portfolio' and 'lighting' post types on home page
 
+function my_pre_get_posts( $query )
+{
+    // validate
+    if( is_admin() )
+    {
+        return $query;
+    }
+
+
+    if( isset($query->query_vars['post_type']) && $query->query_vars['post_type'] == 'events' )
+    {
+        $query->set('orderby', 'meta_value_num');
+        $query->set('meta_key', 'item-order-priority');
+        $query->set('order', 'DESC');
+    }
+    // always return
+    return $query;
+
+}
+
+add_action('pre_get_posts', 'my_pre_get_posts');
+
 include 'portfolio.php';
 include 'helpers/hex-to-hsl.php';
 ?>
