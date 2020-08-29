@@ -6,3 +6,4 @@
 *.out
 .sass-cache
 sftp-config.json
+.sass-cache/*
