@@ -8,13 +8,18 @@
                     </div><!-- .widget-area -->
                 <?php endif;?>
                 <?php if (is_active_sidebar('footer-column-2')): ?>
-                    <div id="widget-area" class="widget-area col-md-6" role="complementary">
+                    <div id="widget-area" class="widget-area col-md-4" role="complementary">
                         <?php dynamic_sidebar('footer-column-2');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
                 <?php if (is_active_sidebar('footer-column-3')): ?>
                     <div id="widget-area" class="widget-area col-md-3" role="complementary">
                         <?php dynamic_sidebar('footer-column-3');?>
+                    </div><!-- .widget-area -->
+                <?php endif;?>
+                <?php if (is_active_sidebar('footer-column-4')): ?>
+                    <div id="widget-area" class="widget-area col-md-3" role="complementary">
+                        <?php dynamic_sidebar('footer-column-4');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
             </div>

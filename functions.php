@@ -455,6 +455,15 @@ function mytheme_widgets_init()
         'after_title' => '',
     ));
     register_sidebar(array(
+        'name' => __('Footer column 4', 'textdomain'),
+        'id' => 'footer-column-4',
+        'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    register_sidebar(array(
         'name' => __('Portfolio sidebar', 'textdomain'),
         'id' => 'portfolio-sidebar',
         'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
