@@ -25,7 +25,7 @@
                             'meta_key' => 'item-order-priority',
                             'orderby'   => 'meta_value_num',
                             'order' => 'DESC',
-                            'posts_per_page' => 5
+                            'posts_per_page' => get_theme_mod('display_options_columns_main' , 5)
                             );
 
                     $loop = new WP_Query($args);
