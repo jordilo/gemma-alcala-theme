@@ -1,7 +1,9 @@
 <?php get_header();?>
-
+<?php 
+$isSidebar = is_active_sidebar('main-portfolio-sidebar');
+?>
 <div class="row">
-	<div class="col-md-12">
+	<div class="<?= $isSidebar ? 'col-md-9' : 'col-md-12'?>">
 
         <div class="row portfolio-archive ">
             <?php if (have_posts()): ?>
@@ -28,7 +30,14 @@
         </div>
 
     </div>
-
+    <?php if ($isSidebar): ?>
+        <div class="col-md-3">
+            <div id="widget-area" class="widget-area " role="complementary">
+                <?php dynamic_sidebar('main-portfolio-sidebar');?>
+            </div><!-- .widget-area -->
+        </div>
+        <?php endif;?>
+    </div>
 </div>
 
 

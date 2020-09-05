@@ -39,7 +39,7 @@
                         <?php 
                     global $q_config;
 
-                    $language = $q_config['language'];?>
+                    $language = $q_config['language'] ?$q_config['language'] : get_locale();?>
                     <div class="portfolio_quote_text">
                         <?= get_theme_mod( 'portfolio_quote_block_' . $language ) ?> </div>
                     </div>

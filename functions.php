@@ -455,6 +455,24 @@ function mytheme_widgets_init()
         'after_title' => '',
     ));
     register_sidebar(array(
+        'name' => __('Portfolio sidebar', 'textdomain'),
+        'id' => 'portfolio-sidebar',
+        'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    register_sidebar(array(
+        'name' => __('Portfolio list sidebar', 'textdomain'),
+        'id' => 'main-portfolio-sidebar',
+        'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    register_sidebar(array(
         'name' => __('Page sidebar', 'textdomain'),
         'id' => 'page-sidebar',
         'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
@@ -464,7 +482,16 @@ function mytheme_widgets_init()
         'after_title' => '',
     ));
     register_sidebar(array(
-        'name' => __('Blog sidebar', 'textdomain'),
+        'name' => __('Blog list sidebar', 'textdomain'),
+        'id' => 'main-blog-sidebar',
+        'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+    register_sidebar(array(
+        'name' => __('Blog single sidebar', 'textdomain'),
         'id' => 'blog-sidebar',
         'description' => __('Widgets in this area will be shown under your single posts, before comments.', 'textdomain'),
         'before_widget' => '',
@@ -789,6 +816,9 @@ function genesischild_register_theme_customizer($wp_customize)
     ));
     global $q_config;
     $available_languages = $q_config['enabled_languages'];
+    if(!count($available_languages)){
+        $available_languages = array(get_locale());
+    }
     foreach ($available_languages as $lang) {
         // Add setting
         $wp_customize->add_setting('portfolio_quote_block_' . $lang, array(
