@@ -1,16 +1,20 @@
 <?php get_header();?>
-<?php $isMainPage = get_option('page_on_front') == $post->ID?>
+<?php
+$isMainPage = get_option('page_on_front') == $post->ID;
+$isSidebar = is_active_sidebar('page-sidebar');
+$isFullWide = $isMainPage || !$isSidebar ;
+?>
 <div class="row">
-<div class="<?php if ($isMainPage) {?>col-md-12<?php } else {?> col-md-9 <?php }?>">
+<div class="<?= $isFullWide ? 'col-md-12' : 'col-md-9'?>">
 		<?php if (have_posts()): ?>
 		   <?php while (have_posts()): the_post();?>
-						   <div id="post-<?php the_ID();?>" <?php post_class();?>>
-						   <?php if (!$isMainPage) {?>
-				                <?php the_title('<h2 class="post-title-header">', '</h2>');?>
-				            <?php }?>
-								 <?php the_content();?>
-							</div>
-						   <?php endwhile;?>
+							   <div id="post-<?php the_ID();?>" <?php post_class();?>>
+							   <?php if (!$isMainPage) {?>
+					                <?php the_title('<h2 class="post-title-header">', '</h2>');?>
+					            <?php }?>
+									 <?php the_content();?>
+								</div>
+							   <?php endwhile;?>
            <?php if (!$isMainPage) {?>
                 <?php if (!is_singular()): ?>
                     <div class="nav-previous alignleft"><?php next_posts_link('Older posts');?></div>
@@ -20,31 +24,33 @@
                 <div class='row portfolio-thumbnail-wrap'>
                 <?php
 
-                        $args = array(
-                            'post_type' => array('portfolio' , 'lighting'),
-                            'meta_key' => 'item-order-priority',
-                            'orderby'   => 'meta_value_num',
-                            'order' => 'DESC',
-                            'posts_per_page' => get_theme_mod('display_options_columns_main' , 5)
-                            );
+    $args = array(
+        'post_type' => array('portfolio', 'lighting'),
+        'meta_key' => 'item-order-priority',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
+        'posts_per_page' => get_theme_mod('display_options_columns_main', 5),
+    );
 
-                    $loop = new WP_Query($args);
-       
-                    while ($loop->have_posts()): $loop->the_post();?>
-                    <div class="col-md-4">
-                       <?php include 'portfolio-summary-tmpl.php';?>
-                    </div>
-                    <?php endwhile;?>
-                    <div class="col-md-4">
-                        <?php 
-                    global $q_config;
+    $loop = new WP_Query($args);
 
-                    $language = $q_config['language'] ?$q_config['language'] : get_locale();?>
+    while ($loop->have_posts()): $loop->the_post();?>
+	                    <div class="col-md-4">
+	                       <?php include 'portfolio-summary-tmpl.php';?>
+	                    </div>
+	                    <?php endwhile;?>
+                    <div class="col-md-4">
+                        <?php
+global $q_config;
+
+    $language = $q_config['language'] ? $q_config['language'] : get_locale();?>
                     <div class="portfolio_quote_text">
-                        <?= get_theme_mod( 'portfolio_quote_block_' . $language ) ?> </div>
+                        <?=get_theme_mod('portfolio_quote_block_' . $language)?> </div>
                     </div>
                 </div>
-                <div class="text-center show-more-wrap"><a href="<?= get_post_type_archive_link('portfolio' , 'lighting')?>"><?= __('Show more' , 'textdomain')?></a></div>
+                <?php $linkType = get_theme_mod('display_options_show_more' , 'portfolio') ?> 
+                <h1><?= $linkType ?></h1>
+                <div class="text-center show-more-wrap"><a href="<?=get_post_type_archive_link($linkType)?>"><?=__('Show more', 'textdomain')?></a></div>
 
                 <?php }?>
             <?php else: ?>

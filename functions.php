@@ -595,6 +595,25 @@ function genesischild_register_theme_customizer($wp_customize)
             'type' => 'number'
         )
     ));
+    $wp_customize->add_setting('display_options_show_more', array(
+        'default' => __('portfolio', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'display_options_show_more',
+        array(
+            'priority' => 1,
+            'label' => __('Items to show in main page', 'genesischild'),
+            'section' => 'display_options',
+            'settings' => 'display_options_show_more',
+            'type' => 'select',
+            'choices' => array(
+                'portfolio' => __('Porfolio'),
+                'lighting' => __('Lighting')
+        ))
+    ));
 
 
 
