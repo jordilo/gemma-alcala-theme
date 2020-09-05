@@ -4,7 +4,7 @@ $meta = get_post_meta($post->ID);
 $exploded = explode(",", $meta['portfolio_gallery'][0]);
 $isSidebar = is_active_sidebar('portfolio-sidebar');
 ?>
-<div class="row">
+<div class="row items-main">
     <?php
 $thumbnailUrl = get_the_post_thumbnail_url($post, 'full');
 if ($thumbnailUrl) {

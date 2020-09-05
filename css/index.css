@@ -581,6 +581,11 @@ img {
   margin-bottom: 30px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/portfolio\.scss}line{font-family:\0000396}}
+.items-main div[id^='post-'] .entry-content-portfolio-single {
+  display: none;
+}
+
 /**
     COLORS
 */
