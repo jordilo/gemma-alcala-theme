@@ -3,22 +3,22 @@
         <div class="footer-widget">
             <div class="container">
                 <?php if (is_active_sidebar('footer-column-1')): ?>
-                    <div id="widget-area" class="widget-area col-md-3" role="complementary">
+                    <div id="widget-area" class="widget-area" role="complementary">
                         <?php dynamic_sidebar('footer-column-1');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
                 <?php if (is_active_sidebar('footer-column-2')): ?>
-                    <div id="widget-area" class="widget-area col-md-4" role="complementary">
+                    <div id="widget-area" class="widget-area" role="complementary">
                         <?php dynamic_sidebar('footer-column-2');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
                 <?php if (is_active_sidebar('footer-column-3')): ?>
-                    <div id="widget-area" class="widget-area col-md-3" role="complementary">
+                    <div id="widget-area" class="widget-area" role="complementary">
                         <?php dynamic_sidebar('footer-column-3');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
                 <?php if (is_active_sidebar('footer-column-4')): ?>
-                    <div id="widget-area" class="widget-area col-md-3" role="complementary">
+                    <div id="widget-area" class="widget-area" role="complementary">
                         <?php dynamic_sidebar('footer-column-4');?>
                     </div><!-- .widget-area -->
                 <?php endif;?>
