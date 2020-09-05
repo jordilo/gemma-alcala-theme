@@ -49,7 +49,6 @@ global $q_config;
                     </div>
                 </div>
                 <?php $linkType = get_theme_mod('display_options_show_more' , 'portfolio') ?> 
-                <h1><?= $linkType ?></h1>
                 <div class="text-center show-more-wrap"><a href="<?=get_post_type_archive_link($linkType)?>"><?=__('Show more', 'textdomain')?></a></div>
 
                 <?php }?>
