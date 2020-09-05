@@ -533,6 +533,52 @@ function genesischild_register_theme_customizer($wp_customize)
         'title' => __('Portfolio settings', 'genesischild'),
         'description' => __('Set editable text for certain content.', 'genesischild'),
     ));
+
+    // Add columns to show in portfolio archive
+    // Add section.
+    $wp_customize->add_section('display_options', array(
+        'title' => __('Itemps options', 'genesischild'),
+        'panel' => 'text_blocks',
+        'priority' => 10,
+    ));
+    $wp_customize->add_setting('display_options_columns', array(
+        'default' => __('3', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'display_options_columns_input',
+        array(
+            'label' => __('Columns to show', 'genesischild'),
+            'section' => 'display_options',
+            'settings' => 'display_options_columns',
+            'type' => 'select',
+            'choices' => array(
+                '1' => __('1 Column'),
+                '2' => __('2 Columns'),
+                '3' => __('3 Columns'),
+                '4' => __('4 Columns'),
+                '6' => __('6 Columns'),
+            ),
+        )
+    ));
+    $wp_customize->add_setting('display_options_text', array(
+        'default' => __('', 'genesischild'),
+        'sanitize_callback' => 'sanitize_text',
+    ));
+    // Add control
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'display_options_text_input',
+        array(
+            'label' => __('Text after columns', 'genesischild'),
+            'section' => 'display_options',
+            'settings' => 'display_options_text',
+            'type' => 'text'
+        )
+    ));
+
     // Add Colors Text
     // Add section.
     $wp_customize->add_section('custom_theme_colors', array(
@@ -825,7 +871,7 @@ function genesischild_register_theme_customizer($wp_customize)
     ));
     global $q_config;
     $available_languages = $q_config['enabled_languages'];
-    if(!count($available_languages)){
+    if (!count($available_languages)) {
         $available_languages = array(get_locale());
     }
     foreach ($available_languages as $lang) {
@@ -857,17 +903,14 @@ function genesischild_register_theme_customizer($wp_customize)
 }
 // Show posts of 'post', 'portfolio' and 'lighting' post types on home page
 
-function my_pre_get_posts( $query )
+function my_pre_get_posts($query)
 {
     // validate
-    if( is_admin() )
-    {
+    if (is_admin()) {
         return $query;
     }
 
-
-    if( isset($query->query_vars['post_type']) && ($query->query_vars['post_type'] == 'portfolio' || $query->query_vars['post_type'] == 'lighting'))
-    {
+    if (isset($query->query_vars['post_type']) && ($query->query_vars['post_type'] == 'portfolio' || $query->query_vars['post_type'] == 'lighting')) {
         $query->set('orderby', 'meta_value_num');
         $query->set('meta_key', 'item-order-priority');
         $query->set('order', 'DESC');
