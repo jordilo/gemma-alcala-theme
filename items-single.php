@@ -10,8 +10,8 @@ $thumbnailUrl = get_the_post_thumbnail_url($post, 'full');
 if ($thumbnailUrl) {
     ?>
     <div class="featured-image__header col-md-12" style="background-image:url(<?=$thumbnailUrl?>)">
-        <?php }?>
     </div>
+        <?php }?>
 	<div class="<?=$isSidebar ? 'col-md-9' : 'col-md-12'?>">
         <script>
             lightbox.option({
