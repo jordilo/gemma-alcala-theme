@@ -2,19 +2,19 @@
 <?php
 $isMainPage = get_option('page_on_front') == $post->ID;
 $isSidebar = is_active_sidebar('page-sidebar');
-$isFullWide = $isMainPage || !$isSidebar ;
+$isFullWide = $isMainPage || !$isSidebar;
 ?>
 <div class="row">
-<div class="<?= $isFullWide ? 'col-md-12' : 'col-md-9'?>">
+<div class="<?=$isFullWide ? 'col-md-12' : 'col-md-9'?>">
 		<?php if (have_posts()): ?>
 		   <?php while (have_posts()): the_post();?>
-							   <div id="post-<?php the_ID();?>" <?php post_class();?>>
-							   <?php if (!$isMainPage) {?>
-					                <?php the_title('<h2 class="post-title-header">', '</h2>');?>
-					            <?php }?>
-									 <?php the_content();?>
-								</div>
-							   <?php endwhile;?>
+                                    <div id="post-<?php the_ID();?>" <?php post_class();?>>
+                                    <?php if (!$isMainPage) {?>
+                                        <?php the_title('<h2 class="post-title-header">', '</h2>');?>
+                                    <?php }?>
+                                            <?php the_content();?>
+                                    </div>
+                                    <?php endwhile;?>
            <?php if (!$isMainPage) {?>
                 <?php if (!is_singular()): ?>
                     <div class="nav-previous alignleft"><?php next_posts_link('Older posts');?></div>
@@ -35,20 +35,24 @@ $isFullWide = $isMainPage || !$isSidebar ;
     $loop = new WP_Query($args);
 
     while ($loop->have_posts()): $loop->the_post();?>
-	                    <div class="col-md-4">
-	                       <?php include 'portfolio-summary-tmpl.php';?>
-	                    </div>
-	                    <?php endwhile;?>
+                            <div class="col-md-4">
+                                <?php include 'portfolio-summary-tmpl.php';?>
+                            </div>
+                            <?php endwhile;?>
                     <div class="col-md-4">
                         <?php
-global $q_config;
-
-    $language = $q_config['language'] ? $q_config['language'] : get_locale();?>
+    global $q_config;
+    function getLocale()
+    {
+        return $q_config['language'] ? $q_config['language'] : function_exists('pll_current_language') ? pll_current_language('locale') : get_locale();
+    }
+    $language = getLocale();
+    ?>
                     <div class="portfolio_quote_text">
                         <?=get_theme_mod('portfolio_quote_block_' . $language)?> </div>
                     </div>
                 </div>
-                <?php $linkType = get_theme_mod('display_options_show_more' , 'portfolio') ?> 
+                <?php $linkType = get_theme_mod('display_options_show_more', 'portfolio')?>
                 <div class="text-center show-more-wrap"><a href="<?=get_post_type_archive_link($linkType)?>"><?=__('Show more', 'textdomain')?></a></div>
 
                 <?php }?>

@@ -575,7 +575,7 @@ function genesischild_register_theme_customizer($wp_customize)
             'label' => __('Text after columns', 'genesischild'),
             'section' => 'display_options',
             'settings' => 'display_options_text',
-            'type' => 'text'
+            'type' => 'text',
         )
     ));
 
@@ -592,7 +592,7 @@ function genesischild_register_theme_customizer($wp_customize)
             'label' => __('Items to show in main page', 'genesischild'),
             'section' => 'display_options',
             'settings' => 'display_options_columns_main',
-            'type' => 'number'
+            'type' => 'number',
         )
     ));
     $wp_customize->add_setting('display_options_show_more', array(
@@ -611,11 +611,9 @@ function genesischild_register_theme_customizer($wp_customize)
             'type' => 'select',
             'choices' => array(
                 'portfolio' => __('Porfolio'),
-                'lighting' => __('Lighting')
-        ))
+                'lighting' => __('Lighting'),
+            ))
     ));
-
-
 
     // Add Colors Text
     // Add section.
@@ -908,15 +906,28 @@ function genesischild_register_theme_customizer($wp_customize)
         'priority' => 10,
     ));
     global $q_config;
-    $available_languages = $q_config['enabled_languages'];
-    if (!count($available_languages)) {
+    // Q translate
+    $available_languages = isset($q_config) ? $q_config['enabled_languages'] : array();
+    // Polylang
+    if ((!isset($available_languages) || count($available_languages) == 0) && function_exists('pll_the_languages')) {
+        $available_languages = array();
+
+        $trp_options = get_option('trp_settings');
+        foreach ($trp_options['publish-languages'] as $lng) {
+            array_push($available_languages, $lng);
+        }
+    }
+    // Default
+    else if (count($available_languages) == 0) {
         $available_languages = array(get_locale());
     }
     foreach ($available_languages as $lang) {
         // Add setting
-        $wp_customize->add_setting('portfolio_quote_block_' . $lang, array(
+        $setting_name = 'portfolio_quote_block_' . $lang;
+        $wp_customize->add_setting($setting_name, array(
             'default' => __('', 'genesischild'),
             'sanitize_callback' => 'sanitize_text',
+            'transport' => 'refresh',
         ));
 
         // Add control
@@ -924,9 +935,9 @@ function genesischild_register_theme_customizer($wp_customize)
             $wp_customize,
             'portfolio_quote_text_' . $lang,
             array(
-                'label' => __('Portfolio quotes ' . $q_config['language_name'][$lang], 'genesischild'),
+                'label' => __('Portfolio quotes ' . $lang, 'genesischild'),
                 'section' => 'portfolio_quote_text',
-                'settings' => 'portfolio_quote_block_' . $lang,
+                'settings' => $setting_name,
                 'type' => 'text',
             )
         )
