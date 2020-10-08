@@ -102,7 +102,7 @@
   color: var(--text-color);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000367}}
-.navbar .secondary-menu li.active a {
+.navbar .secondary-menu li.active a, .navbar .secondary-menu li.current-lang a {
   color: var(--main-color);
 }
 @media screen and (max-width: 750px) {
@@ -112,13 +112,13 @@
     border-top: 1px solid #e7e7e7;
     border-bottom: 1px solid #e7e7e7;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000376}}
   .navbar .secondary-menu ul {
     padding: 0;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/XAMPP\/xamppfiles\/htdocs\/wordpress\/wp-content\/themes\/Bootstrap-3-blank-wordpress-theme-master\/sass\/header\.scss}line{font-family:\0000383}}
 .slider-component {
   margin-bottom: 30px;
 }

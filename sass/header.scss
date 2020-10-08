@@ -1,84 +1,85 @@
-@import "variables";
+@import 'variables';
 .navbar {
-    @media screen and (min-width: 768px) {
-        height: 150px;
-        padding: 50px 0;
+  @media screen and (min-width: 768px) {
+    height: 150px;
+    padding: 50px 0;
+  }
+  &.navbar-default {
+    background-color: transparent;
+    border: none;
+  }
+  .navbar-brand {
+    padding: 0;
+    & > .wp-logo {
+      display: inline;
+      max-height: 100%;
     }
-    &.navbar-default {
-        background-color: transparent;
-        border: none;
+  }
+  .navbar-nav > .active {
+    & > a {
+      background-color: transparent;
+      color: var(--main-color);
     }
-    .navbar-brand {
+    & > a:hover {
+      background-color: transparent;
+      color: var(--main-color-darken);
+    }
+    & > a:active {
+      background-color: transparent;
+      color: var(--main-color-lighter);
+    }
+  }
+  &.navbar-default .navbar-toggle {
+    border-color: var(--main-color--lightest);
+    &.collapsed {
+      background-color: var(--main-color--lightest);
+    }
+    .icon-bar {
+      background-color: var(--main-color);
+    }
+  }
+  .nav li {
+    border-right: 1px solid var(--text-color);
+    &:last-child {
+      border-right: none;
+    }
+    @media screen and (max-width: 768px) {
+      border-right: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    #menu-main-menu {
+      float: left !important;
+    }
+  }
+  .secondary-menu {
+    height: 50px;
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 14px;
+      text-transform: uppercase;
+      a {
+        color: var(--text-color);
+      }
+      &.active a,
+      &.current-lang a {
+        color: var(--main-color);
+      }
+    }
+    @media screen and (max-width: 750px) {
+      text-align: center;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+      ul {
         padding: 0;
-        &>.wp-logo {
-            display: inline;
-            max-height: 100%;
-        }
+      }
     }
-    .navbar-nav>.active {
-        &>a {
-            background-color: transparent;
-            color: var(--main-color);
-        }
-        &>a:hover {
-            background-color: transparent;
-            color: var(--main-color-darken);
-        }
-        &>a:active {
-            background-color: transparent;
-            color: var(--main-color-lighter);
-        }
-    }
-    &.navbar-default .navbar-toggle {
-        border-color: var(--main-color--lightest);
-        &.collapsed {
-            background-color: var(--main-color--lightest);
-        }
-        .icon-bar {
-            background-color: var(--main-color);
-        }
-    }
-    .nav li {
-        border-right: 1px solid var(--text-color);
-        &:last-child {
-            border-right: none;
-        }
-        @media screen and (max-width:768px) {
-            border-right: none;
-        }
-    }
-    @media screen and (min-width:768px) {
-        #menu-main-menu {
-            float: left !important;
-        }
-    }
-    .secondary-menu {
-        height: 50px;
-        ul {
-            margin: 0;
-        }
-        li {
-            display: inline-block;
-            padding: 14px;
-            text-transform: uppercase;
-            a {
-                color: var(--text-color);
-            }
-            &.active a {
-                color: var(--main-color);
-            }
-        }
-        @media screen and (max-width:750px) {
-            text-align: center;
-            border-top: 1px solid #e7e7e7;
-            border-bottom: 1px solid #e7e7e7;
-            ul {
-                padding: 0;
-            }
-        }
-    }
+  }
 }
 
 .slider-component {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
